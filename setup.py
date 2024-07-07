@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+import setuptools
 import pathlib
 import subprocess
 import distutils.cmd
@@ -102,14 +102,14 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3 :: Only'
     ],
-    keywords='aeuitas, horizon2020, xai, bias',  # Optional
+    keywords='aequitas, horizon2020, xai, bias',  # Optional
     # package_dir={'': 'src'},  # Optional
     packages=find_packages(),  # Required
     include_package_data=True,
     python_requires=python_version,
     install_requires=dependencies,
     zip_safe=False,
-    platforms="Independant",
+    platforms="Independent",
     project_urls={  # Optional
         'Bug Reports': f'{url}/issues',
         # 'Funding': 'https://donate.pypi.org',
@@ -119,5 +119,5 @@ setup(
     cmdclass={
         'get_project_version': GetVersionCommand,
         'get_minimum_python_version': GetMinimumPythonVersion,
-    },
+    }
 )
